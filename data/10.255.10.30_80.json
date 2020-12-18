@@ -1,0 +1,3105 @@
+{
+  "untitled": {
+    "project_id": "225af93a-5df4-401e-9500-a81be776be41",
+    "nodes": {
+      "dh-bhm-cr-a0-01": {
+        "node_id": "d064932b-942b-44ca-985e-160142b33644",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": -30,
+        "ports": {}
+      },
+      "dh-dvr-cr-a0-03": {
+        "node_id": "137764df-72f8-490a-affb-babd51ef12f0",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": 70,
+        "ports": {}
+      },
+      "dh-lnd-cr-a0-02": {
+        "node_id": "2615d2b4-0506-4a52-bba1-77c5639972e1",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 170,
+        "ports": {}
+      },
+      "dh-cal-cr-a20-01": {
+        "node_id": "a02b49fc-500b-4137-ab17-5bd2ed9700f6",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 345,
+        "y": 120,
+        "ports": {}
+      },
+      "dh-mcr-cr-a0-07": {
+        "node_id": "f2c77ecc-e27c-4d4b-ae79-a93dbea7ec48",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -230,
+        "y": -230,
+        "ports": {}
+      },
+      "dh-new-cr-a30-01": {
+        "node_id": "a5ee0d0d-fa16-4ec6-827b-0f09a4a1ea60",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": -430,
+        "ports": {}
+      },
+      "dh-liv-cr-a40-01": {
+        "node_id": "4dc6581e-0178-41e6-be52-b919b25eaf5c",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -480,
+        "y": -180,
+        "ports": {}
+      },
+      "dh-par-cr-a20-03": {
+        "node_id": "f2d9fb57-d9a7-48ff-8afc-63b03140ca0c",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 420,
+        "y": 345,
+        "ports": {}
+      },
+      "dh-byx-cr-a10-02": {
+        "node_id": "3cffe296-07de-40c1-9a68-bd20e8ff8a1b",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 470,
+        "ports": {}
+      },
+      "dh-prt-cr-a10-01": {
+        "node_id": "c22bbb78-5d23-443b-b9fc-a045d89d3c57",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": 270,
+        "ports": {}
+      },
+      "dh-lds-cr-a0-05": {
+        "node_id": "c7d05a35-a8c8-4678-a3d8-a2c93b64ce8a",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": -330,
+        "ports": {}
+      },
+      "dh-norw-cr-a0-04": {
+        "node_id": "5ed88e13-5ff3-4df3-b38c-fb638910972d",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 270,
+        "y": -130,
+        "ports": {}
+      },
+      "dh-brs-cr-a20-02": {
+        "node_id": "a7d69d59-5ad6-4a12-9bfa-5b15c74dbfff",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 670,
+        "y": 170,
+        "ports": {}
+      },
+      "NXv-1": {
+        "node_id": "06ab602f-c429-49d8-9492-cad759950b96",
+        "template_id": "ae461c1d-842d-4831-8fd4-d50a5dea82bf",
+        "node_type": "qemu",
+        "x": 170,
+        "y": 770,
+        "ports": {}
+      },
+      "NXv-2": {
+        "node_id": "da8e958d-7820-400c-9ec8-176284cb76c8",
+        "template_id": "ae461c1d-842d-4831-8fd4-d50a5dea82bf",
+        "node_type": "qemu",
+        "x": 370,
+        "y": 770,
+        "ports": {}
+      }
+    }
+  },
+  "Fortigate": {
+    "project_id": "0dc05d35-e0b5-462e-8f23-1f9e34180216",
+    "nodes": {
+      "FORTIGOOD": {
+        "node_id": "7940a15b-15d7-49fb-a1ba-1edc5dd40e03",
+        "template_id": "2dc59721-cbf2-4add-aff4-c6792d17ce9d",
+        "node_type": "qemu",
+        "x": -416,
+        "y": 46,
+        "ports": {}
+      },
+      "FORTIBAD": {
+        "node_id": "004c376e-9e6d-45b4-b23c-618b015daea3",
+        "template_id": "2dc59721-cbf2-4add-aff4-c6792d17ce9d",
+        "node_type": "qemu",
+        "x": -126,
+        "y": 50,
+        "ports": {}
+      },
+      "HomeNetwork1": {
+        "node_id": "62ea39e4-437f-40e6-b132-c486a43deb53",
+        "template_id": "4a257c03-772a-43a2-8dcd-06530c0b158e",
+        "node_type": "cloud",
+        "x": -635,
+        "y": 38,
+        "ports": {}
+      },
+      "HomeNetwork2": {
+        "node_id": "366959b1-ef94-4d52-818e-9cbb384a37e2",
+        "template_id": "4a257c03-772a-43a2-8dcd-06530c0b158e",
+        "node_type": "cloud",
+        "x": 8,
+        "y": 57,
+        "ports": {}
+      }
+    }
+  },
+  "WAN 2": {
+    "project_id": "70cbebb3-e16d-404c-8bbd-0ec8454e547b",
+    "nodes": {
+      "R1": {
+        "node_id": "f2ac14fa-ae20-40fb-8c08-5f52dea24e48",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -21,
+        "y": -22,
+        "ports": {}
+      }
+    }
+  },
+  "Project Interconnect": {
+    "project_id": "65b515eb-6aca-40f5-a435-a7cff505514d",
+    "nodes": {
+      "ProjectLink1": {
+        "node_id": "ec900d20-1398-44b7-8db9-cca04cc86cad",
+        "template_id": "d06bd3c7-24a4-4d7a-b83f-d8adbb31fd09",
+        "node_type": "cloud",
+        "x": 236,
+        "y": -51,
+        "ports": {
+          "br0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "94e11576-00cc-402e-9a74-3b947c8dfd51",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "7f817c9a-c8cf-434c-9254-85947e3695cf"
+          }
+        }
+      },
+      "R1": {
+        "node_id": "7f817c9a-c8cf-434c-9254-85947e3695cf",
+        "template_id": "7cfc2094-cd90-433e-a81a-b978bbe6aae0",
+        "node_type": "dynamips",
+        "x": 284,
+        "y": 91,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "94e11576-00cc-402e-9a74-3b947c8dfd51",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "ec900d20-1398-44b7-8db9-cca04cc86cad"
+          },
+          "f1/1": {
+            "adapter_number": 1,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/2": {
+            "adapter_number": 1,
+            "port_number": 2,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/3": {
+            "adapter_number": 1,
+            "port_number": 3,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/4": {
+            "adapter_number": 1,
+            "port_number": 4,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/5": {
+            "adapter_number": 1,
+            "port_number": 5,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/6": {
+            "adapter_number": 1,
+            "port_number": 6,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/7": {
+            "adapter_number": 1,
+            "port_number": 7,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/8": {
+            "adapter_number": 1,
+            "port_number": 8,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/9": {
+            "adapter_number": 1,
+            "port_number": 9,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/10": {
+            "adapter_number": 1,
+            "port_number": 10,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/11": {
+            "adapter_number": 1,
+            "port_number": 11,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/12": {
+            "adapter_number": 1,
+            "port_number": 12,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/13": {
+            "adapter_number": 1,
+            "port_number": 13,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/14": {
+            "adapter_number": 1,
+            "port_number": 14,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/15": {
+            "adapter_number": 1,
+            "port_number": 15,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "R2": {
+        "node_id": "7191fb32-6f0b-4867-84ce-3714137b7065",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -662,
+        "y": -123,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "4f025ae4-2f51-4770-800c-9d2bac959ce2",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "569a07ed-efbe-4142-bc8f-a22acc9a8be1"
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "R3": {
+        "node_id": "569a07ed-efbe-4142-bc8f-a22acc9a8be1",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -485,
+        "y": -113,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "4f025ae4-2f51-4770-800c-9d2bac959ce2",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "7191fb32-6f0b-4867-84ce-3714137b7065"
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      }
+    }
+  },
+  "Test": {
+    "project_id": "ad36f1f4-a96f-4f2b-a010-8e99758b25df",
+    "nodes": {
+      "R1": {
+        "node_id": "0ec9d27a-2a9a-4c3e-8600-0fb237e13b09",
+        "template_id": "b0615d86-6db5-48de-8636-96d3f949e742",
+        "node_type": "dynamips",
+        "x": -311,
+        "y": -173,
+        "ports": {}
+      },
+      "R2": {
+        "node_id": "e917382e-11fb-47d8-8889-2025b8ee6310",
+        "template_id": "b0615d86-6db5-48de-8636-96d3f949e742",
+        "node_type": "dynamips",
+        "x": 58,
+        "y": -170,
+        "ports": {}
+      },
+      "Cloud1": {
+        "node_id": "b4621414-1f3e-4612-ae65-c31c4299d87c",
+        "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+        "node_type": "cloud",
+        "x": -359,
+        "y": -353,
+        "ports": {}
+      },
+      "Switch1": {
+        "node_id": "5464707d-5c01-4530-b517-59fa6b52ad0f",
+        "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+        "node_type": "ethernet_switch",
+        "x": 196,
+        "y": -166,
+        "ports": {}
+      },
+      "TS-2": {
+        "node_id": "e6389231-32cf-4119-8636-6caafc8e42e1",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": 206,
+        "y": -69,
+        "ports": {}
+      },
+      "TS-3": {
+        "node_id": "3ee84a4d-6fc7-4e02-a021-0a64ade7c97b",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": -345,
+        "y": -45,
+        "ports": {}
+      },
+      "FTGv-1": {
+        "node_id": "3e3da222-d208-47a1-99fb-e04b57baf7b2",
+        "template_id": "2dc59721-cbf2-4add-aff4-c6792d17ce9d",
+        "node_type": "qemu",
+        "x": -357,
+        "y": 81,
+        "ports": {}
+      },
+      "FTGv-2": {
+        "node_id": "7d7e1a23-50f7-4b0f-8692-519c339986e1",
+        "template_id": "2dc59721-cbf2-4add-aff4-c6792d17ce9d",
+        "node_type": "qemu",
+        "x": -73,
+        "y": 71,
+        "ports": {}
+      },
+      "Cloud2": {
+        "node_id": "2e68a987-aa3a-4f23-adec-d2f7c1559f29",
+        "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+        "node_type": "cloud",
+        "x": -357,
+        "y": 253,
+        "ports": {}
+      },
+      "Cloud3": {
+        "node_id": "bfaa31b4-270d-436c-84e9-881ae0005ebc",
+        "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+        "node_type": "cloud",
+        "x": -118,
+        "y": 253,
+        "ports": {}
+      },
+      "Switch2": {
+        "node_id": "a6ca7ef2-f7f9-4d68-b320-713dc2ba8b6d",
+        "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+        "node_type": "ethernet_switch",
+        "x": -217,
+        "y": 11,
+        "ports": {}
+      },
+      "Switch3": {
+        "node_id": "932fddba-b1c8-4a2c-8fcf-75be0498919c",
+        "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+        "node_type": "ethernet_switch",
+        "x": 62,
+        "y": -8,
+        "ports": {}
+      },
+      "Switch4": {
+        "node_id": "df588d1c-8566-442e-b175-10a0d11207ff",
+        "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+        "node_type": "ethernet_switch",
+        "x": -519,
+        "y": 24,
+        "ports": {}
+      },
+      "TS-1": {
+        "node_id": "94fb7d8f-695c-4ff3-90db-6bb529d6042a",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": -589,
+        "y": 179,
+        "ports": {}
+      },
+      "TS-4": {
+        "node_id": "8f550e88-8a36-47fc-813a-97083d5cabe7",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": 172,
+        "y": 176,
+        "ports": {}
+      }
+    }
+  },
+  "APITest": {
+    "project_id": "515bfa2f-896a-48c7-945b-acbdbbf05a38",
+    "nodes": {
+      "Test_node_1": {
+        "node_id": "159622c9-aed1-4aa6-9759-17a860d88952",
+        "template_id": null,
+        "node_type": "dynamips",
+        "x": 0,
+        "y": 200,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "a2b80da0-1a09-48b0-a64c-8007527c86b0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "35a2c4e1-4fd7-415e-953a-f3584f024f1a",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "a953ea14-c6d6-492f-83e8-7421d62ac4f8",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "bbee4fe0-1852-4e47-9b05-7084c7bc37b0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": "8fb9b55e-514d-4393-ad54-f92050cfc6f0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": "24a72a97-0ff6-49a9-9345-1dbcc9c94da7",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          }
+        }
+      },
+      "Test_node_2": {
+        "node_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3",
+        "template_id": null,
+        "node_type": "dynamips",
+        "x": -200,
+        "y": 0,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "a2b80da0-1a09-48b0-a64c-8007527c86b0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "1b743443-24cc-478d-9445-4531d794e60d",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "a953ea14-c6d6-492f-83e8-7421d62ac4f8",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "618c3db7-c06f-488c-bbab-89fcd137c41c",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": "8fb9b55e-514d-4393-ad54-f92050cfc6f0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": "670dfada-800e-45b3-9277-0767968716cb",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          }
+        }
+      },
+      "Test_node_3": {
+        "node_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94",
+        "template_id": null,
+        "node_type": "dynamips",
+        "x": 0,
+        "y": -200,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "1b743443-24cc-478d-9445-4531d794e60d",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "4f81511a-60f2-4320-b06e-e4ed18f8c1af",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "618c3db7-c06f-488c-bbab-89fcd137c41c",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "4ffdc96a-2d09-4aaf-8dab-d085c8bcc86e",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": "670dfada-800e-45b3-9277-0767968716cb",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "294c5bb3-d6ea-4a2b-87b3-b25bb5d729f3"
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": "7402e982-cb54-49aa-9dfd-579ec8170e63",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "fe144758-b913-435e-94b2-481cf88b00dc"
+          }
+        }
+      },
+      "Test_node_4": {
+        "node_id": "fe144758-b913-435e-94b2-481cf88b00dc",
+        "template_id": null,
+        "node_type": "dynamips",
+        "x": 200,
+        "y": 0,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "4f81511a-60f2-4320-b06e-e4ed18f8c1af",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "35a2c4e1-4fd7-415e-953a-f3584f024f1a",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "4ffdc96a-2d09-4aaf-8dab-d085c8bcc86e",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "bbee4fe0-1852-4e47-9b05-7084c7bc37b0",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": "7402e982-cb54-49aa-9dfd-579ec8170e63",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "4c51ff0c-cbf5-4da5-971b-84395a541c94"
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": "24a72a97-0ff6-49a9-9345-1dbcc9c94da7",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "159622c9-aed1-4aa6-9759-17a860d88952"
+          }
+        }
+      }
+    }
+  },
+  "OSPF WAN BASE": {
+    "project_id": "8743585a-b46c-47b4-b6cf-5938a240fa06",
+    "nodes": {
+      "dh-bhm-cr-a0-01": {
+        "node_id": "8f8f0b3c-bf7c-4d58-bdbf-52fec719fdd9",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": -30,
+        "ports": {}
+      },
+      "dh-dvr-cr-a0-03": {
+        "node_id": "b8c07509-601f-43f6-a10b-2b3f53c0c514",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": 70,
+        "ports": {}
+      },
+      "dh-lnd-cr-a0-02": {
+        "node_id": "b2dfbe42-193a-4ef8-a2f7-c4c1f921c6b8",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 170,
+        "ports": {}
+      },
+      "dh-cal-cr-a20-01": {
+        "node_id": "f8f855b3-211b-4122-b439-a765c4372176",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 345,
+        "y": 120,
+        "ports": {}
+      },
+      "dh-mcr-cr-a0-07": {
+        "node_id": "dfc09bcd-6280-4100-b8ce-09e59792651d",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -230,
+        "y": -230,
+        "ports": {}
+      },
+      "dh-new-cr-a30-01": {
+        "node_id": "fabcc6de-dc45-4b8c-969d-97d23fca6300",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": -430,
+        "ports": {}
+      },
+      "dh-liv-cr-a40-01": {
+        "node_id": "9ea69ce7-729d-49f0-bca8-5bfb8c81faf7",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -480,
+        "y": -180,
+        "ports": {}
+      },
+      "dh-par-cr-a20-03": {
+        "node_id": "1bc58ea1-f3f7-46bd-8afb-a5391d49c4d0",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 420,
+        "y": 345,
+        "ports": {}
+      },
+      "dh-byx-cr-a10-02": {
+        "node_id": "5879ffec-564b-4038-9b5d-7e6739e7a9a9",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 470,
+        "ports": {}
+      },
+      "dh-prt-cr-a10-01": {
+        "node_id": "4615c025-74c1-42e0-883d-89dc7c1613a4",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": 270,
+        "ports": {}
+      },
+      "dh-lds-cr-a0-05": {
+        "node_id": "334d9e45-fb99-422f-ba5d-5b908c5c5954",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": -330,
+        "ports": {}
+      },
+      "dh-norw-cr-a0-04": {
+        "node_id": "20e8b4eb-0ba9-488b-87e8-c17db4b91967",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 270,
+        "y": -130,
+        "ports": {}
+      },
+      "dh-brs-cr-a20-02": {
+        "node_id": "efbfbd7a-0e57-4913-9315-78e7f461048e",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 670,
+        "y": 170,
+        "ports": {}
+      },
+      "ProjectLink1": {
+        "node_id": "814a3297-88cb-4943-8dec-5910abac975d",
+        "template_id": "d06bd3c7-24a4-4d7a-b83f-d8adbb31fd09",
+        "node_type": "cloud",
+        "x": 420,
+        "y": -135,
+        "ports": {}
+      },
+      "ProjectLink2": {
+        "node_id": "63a59273-2c74-4dd5-841c-b10fcbb14e24",
+        "template_id": "d06bd3c7-24a4-4d7a-b83f-d8adbb31fd09",
+        "node_type": "cloud",
+        "x": -579,
+        "y": 265,
+        "ports": {}
+      }
+    }
+  },
+  "OSPF WAN": {
+    "project_id": "1ca21146-7557-4907-9602-77204cea0369",
+    "nodes": {
+      "dh-bhm-cr-a0-01": {
+        "node_id": "0620963a-49f1-4aba-8daf-f78320f18990",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": -30,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-dvr-cr-a0-03": {
+        "node_id": "505e35d3-60c1-4984-bbf2-ebf5ffb989cd",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": 70,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "6f61a816-722c-4201-a0f2-a8cf37deaa5c",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "d2102241-3f7f-49aa-bfca-f2150b2bfdd9"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-lnd-cr-a0-02": {
+        "node_id": "85b0695e-801b-4f30-8577-f69943561189",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 170,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-cal-cr-a20-01": {
+        "node_id": "0a2501b2-0067-425f-9d78-a113bc15cd48",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 345,
+        "y": 120,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-mcr-cr-a0-07": {
+        "node_id": "8838169e-1dd2-4fe4-839c-c3847a56a228",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -230,
+        "y": -230,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-new-cr-a30-01": {
+        "node_id": "95fe1025-ced2-42dd-a448-051e86d76cc4",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 170,
+        "y": -430,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-liv-cr-a40-01": {
+        "node_id": "b760cde6-28b4-49fc-8d17-b1944340fe68",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -480,
+        "y": -180,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-par-cr-a20-03": {
+        "node_id": "2b5c3b80-0edc-4264-8dfb-4bd81eb0199a",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 370,
+        "y": 370,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-byx-cr-a10-02": {
+        "node_id": "d01fc173-bf05-430b-87d8-edbcfbbc47d8",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": 470,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-prt-cr-a10-01": {
+        "node_id": "bde25ef5-38f8-40d7-afc6-345cff616511",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": 270,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-lds-cr-a0-05": {
+        "node_id": "b20c002e-de2f-4ce8-af92-7a7695aba552",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": -330,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "fd28bf98-7d85-4f8c-98c6-71bda60a587a",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "d2102241-3f7f-49aa-bfca-f2150b2bfdd9"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-norw-cr-a0-04": {
+        "node_id": "d2102241-3f7f-49aa-bfca-f2150b2bfdd9",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 270,
+        "y": -130,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "fd28bf98-7d85-4f8c-98c6-71bda60a587a",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "b20c002e-de2f-4ce8-af92-7a7695aba552"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": "6f61a816-722c-4201-a0f2-a8cf37deaa5c",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "505e35d3-60c1-4984-bbf2-ebf5ffb989cd"
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "dh-brs-cr-a20-02": {
+        "node_id": "95ed8769-32ea-48df-a1b4-95bd99a59918",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 670,
+        "y": 170,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "Cloud1": {
+        "node_id": "409fdcf2-8721-4745-895d-58ad26394f9e",
+        "template_id": "4a257c03-772a-43a2-8dcd-06530c0b158e",
+        "node_type": "cloud",
+        "x": -379,
+        "y": 65,
+        "ports": {
+          "eth0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "TS-1": {
+        "node_id": "ed248977-d052-446d-ab88-66921153ae92",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": -540,
+        "y": 260,
+        "ports": {
+          "eth0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "TS-2": {
+        "node_id": "ecdcfc15-7ab2-4166-bc8f-501c7480c262",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": 460,
+        "y": 560,
+        "ports": {
+          "eth0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "TS-3": {
+        "node_id": "2370be33-2399-4100-8293-8302c83b7a9e",
+        "template_id": "baa3f68d-d276-4284-b74a-251d9279de7c",
+        "node_type": "qemu",
+        "x": -640,
+        "y": -40,
+        "ports": {
+          "eth0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "auto-TS-1": {
+        "node_id": "13630741-a26e-4d13-8f2f-6678e48352fc",
+        "template_id": "88bb3305-55f8-4986-a977-a060b33472f1",
+        "node_type": "docker",
+        "x": 248,
+        "y": 551,
+        "ports": {
+          "eth0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      }
+    }
+  },
+  "MPLS": {
+    "project_id": "f25df160-022a-470b-b4c1-e4076ba4bae5",
+    "nodes": {
+      "Cust-A-S1": {
+        "node_id": "54c6b3ac-b362-4658-89db-e4719dca24b8",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -530,
+        "y": -130,
+        "ports": {}
+      },
+      "PE-01": {
+        "node_id": "a9741847-d7b7-459d-9619-62090eeea44f",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": -130,
+        "ports": {}
+      },
+      "P-01": {
+        "node_id": "8de15ff4-65e3-4a23-9568-71bacdbfc292",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": -130,
+        "ports": {}
+      },
+      "PE-02": {
+        "node_id": "e9ea5e3c-cc6c-45a0-b777-942aeda8bc7a",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 70,
+        "y": -130,
+        "ports": {}
+      },
+      "Cust-A-S2": {
+        "node_id": "fcd7820f-24bf-4a89-9a78-d82dafb955cd",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 270,
+        "y": -130,
+        "ports": {}
+      },
+      "PE-03": {
+        "node_id": "5057f929-c7a0-4a8b-a8d0-816b0ca43cc0",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": 70,
+        "ports": {}
+      },
+      "P-02": {
+        "node_id": "fa8902b6-bf84-4c13-9013-3c7f125ed8eb",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": 70,
+        "ports": {}
+      },
+      "PE-04": {
+        "node_id": "8361f373-5f05-48b5-a8e3-e0a74714192a",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 70,
+        "y": 70,
+        "ports": {}
+      },
+      "Cust-B-S1": {
+        "node_id": "6dda8cd0-648f-46e2-a285-13762e09d238",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": 270,
+        "ports": {}
+      },
+      "Cust-B-S2": {
+        "node_id": "757ffb79-7092-498b-9edb-2b32401ea9bd",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": 70,
+        "y": 270,
+        "ports": {}
+      },
+      "NAT1": {
+        "node_id": "bc730255-2e2c-449d-9d87-b41fa58c8a80",
+        "template_id": "df8f4ea9-33b7-3e96-86a2-c39bc9bb649c",
+        "node_type": "nat",
+        "x": -178,
+        "y": -398,
+        "ports": {}
+      },
+      "ASAv-1": {
+        "node_id": "870b866e-885b-4538-a906-181bb8840292",
+        "template_id": "c9ae6450-5b4c-41f7-8d95-19ebda0be64a",
+        "node_type": "qemu",
+        "x": -131,
+        "y": -259,
+        "ports": {}
+      }
+    }
+  },
+  "FW Tests": {
+    "project_id": "ca84ad59-189e-48ab-8826-c96ec54cb421",
+    "nodes": {
+      "pfSense-1": {
+        "node_id": "6f518e0f-a8e4-4b34-82aa-bedec6577e95",
+        "template_id": "176f1e8c-5cb4-4c53-bd94-3397a257a502",
+        "node_type": "qemu",
+        "x": -345,
+        "y": 6,
+        "ports": {}
+      },
+      "FTDv-1": {
+        "node_id": "166d197c-6b2b-4f48-8613-80126752c911",
+        "template_id": "b850c062-26f1-4e15-a29f-92b409fa96db",
+        "node_type": "qemu",
+        "x": -209,
+        "y": 61,
+        "ports": {}
+      },
+      "Cloud1": {
+        "node_id": "a5729962-a2e9-4571-8657-af7881da055d",
+        "template_id": "4a257c03-772a-43a2-8dcd-06530c0b158e",
+        "node_type": "cloud",
+        "x": -71,
+        "y": -56,
+        "ports": {}
+      }
+    }
+  },
+  "IS-IS WAN BASE": {
+    "project_id": "e7ea2195-21a5-4037-ac58-be2cb82196dd",
+    "nodes": {
+      "mw-cr-bolton-01": {
+        "node_id": "571ed264-2ef7-47f2-bf22-9e3cfc23c23c",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -330,
+        "y": -330,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "bde23fb9-2109-4db0-980a-737f505bf6f2",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "e3545596-8879-48d9-ab49-b964a917c665"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "f2091a9e-2dfc-4f43-a1ae-e4f5f689b4ee",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "ed7850a0-dfd4-4e0e-a1fd-c3cb70ac41fa"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "mw-cr-manc-01": {
+        "node_id": "ed7850a0-dfd4-4e0e-a1fd-c3cb70ac41fa",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -30,
+        "y": -230,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "f2091a9e-2dfc-4f43-a1ae-e4f5f689b4ee",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "571ed264-2ef7-47f2-bf22-9e3cfc23c23c"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "mw-cr-westh-01": {
+        "node_id": "e3545596-8879-48d9-ab49-b964a917c665",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -230,
+        "y": -130,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "bde23fb9-2109-4db0-980a-737f505bf6f2",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "571ed264-2ef7-47f2-bf22-9e3cfc23c23c"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "c59082bf-fb30-41d0-98c7-83c28ced4676",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "f232ed53-cab4-430c-bd2d-e6b87d3bbf56"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "592989bc-96bd-4e09-9bf2-d5e7eb08efce",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "c575a206-8221-4d48-91ec-10b2e3bff548"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "mw-cr-daisyhill-01": {
+        "node_id": "c575a206-8221-4d48-91ec-10b2e3bff548",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -130,
+        "y": 70,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "f499b6c8-26b9-41c8-a183-d99140c9445d",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "a9f01f56-ebcd-4f4a-8189-cc80752f0d2b"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "a1f0847a-a934-4a33-b2b3-6010852bea41",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "a9f01f56-ebcd-4f4a-8189-cc80752f0d2b"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": "592989bc-96bd-4e09-9bf2-d5e7eb08efce",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "e3545596-8879-48d9-ab49-b964a917c665"
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "mw-cr-leigh-01": {
+        "node_id": "a9f01f56-ebcd-4f4a-8189-cc80752f0d2b",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -430,
+        "y": 170,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "88e129ca-d4bb-43c5-ad86-809df5b849b3",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "ac4c0cf9-6ca4-42a0-be50-1fed55f370fc"
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": "f499b6c8-26b9-41c8-a183-d99140c9445d",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "c575a206-8221-4d48-91ec-10b2e3bff548"
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "a1f0847a-a934-4a33-b2b3-6010852bea41",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "c575a206-8221-4d48-91ec-10b2e3bff548"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "mw-cr-wigan-01": {
+        "node_id": "f232ed53-cab4-430c-bd2d-e6b87d3bbf56",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -530,
+        "y": -130,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": "c59082bf-fb30-41d0-98c7-83c28ced4676",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "e3545596-8879-48d9-ab49-b964a917c665"
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "ProjectLink1": {
+        "node_id": "ac4c0cf9-6ca4-42a0-be50-1fed55f370fc",
+        "template_id": "d06bd3c7-24a4-4d7a-b83f-d8adbb31fd09",
+        "node_type": "cloud",
+        "x": -679,
+        "y": 165,
+        "ports": {
+          "br0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "88e129ca-d4bb-43c5-ad86-809df5b849b3",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "a9f01f56-ebcd-4f4a-8189-cc80752f0d2b"
+          }
+        }
+      },
+      "mw-port-rs-01": {
+        "node_id": "494dcfd1-43c7-40d2-acc6-f9dc9c2b45c6",
+        "template_id": "01fb6517-60af-452f-b87e-d7bc7be976ac",
+        "node_type": "dynamips",
+        "x": -430,
+        "y": 470,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "d2596dcc-5b7b-4286-91c7-b441be068556",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "09f9ac04-d52f-4fd1-913b-2b50b536b7f3"
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      },
+      "ProjectLink2": {
+        "node_id": "09f9ac04-d52f-4fd1-913b-2b50b536b7f3",
+        "template_id": "d06bd3c7-24a4-4d7a-b83f-d8adbb31fd09",
+        "node_type": "cloud",
+        "x": -679,
+        "y": 465,
+        "ports": {
+          "br0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": "d2596dcc-5b7b-4286-91c7-b441be068556",
+            "in_use": true,
+            "connected_to": null,
+            "connected_to_id": "494dcfd1-43c7-40d2-acc6-f9dc9c2b45c6"
+          }
+        }
+      },
+      "Test_node8": {
+        "node_id": "46a5f477-a82c-4b30-8504-a8b40a77a4ad",
+        "template_id": null,
+        "node_type": "dynamips",
+        "x": 70,
+        "y": -30,
+        "ports": {
+          "f0/0": {
+            "adapter_number": 0,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f0/1": {
+            "adapter_number": 0,
+            "port_number": 1,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "f1/0": {
+            "adapter_number": 1,
+            "port_number": 0,
+            "link_type": "ethernet",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/0": {
+            "adapter_number": 0,
+            "port_number": 16,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/1": {
+            "adapter_number": 0,
+            "port_number": 17,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/2": {
+            "adapter_number": 0,
+            "port_number": 32,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/3": {
+            "adapter_number": 0,
+            "port_number": 33,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/4": {
+            "adapter_number": 0,
+            "port_number": 48,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          },
+          "s0/5": {
+            "adapter_number": 0,
+            "port_number": 49,
+            "link_type": "serial",
+            "link_id": null,
+            "in_use": false,
+            "connected_to": null
+          }
+        }
+      }
+    }
+  },
+  "TestProj": {
+    "project_id": "0401a774-7a42-42b4-88bc-7f5ba471d282",
+    "nodes": {}
+  }
+}
