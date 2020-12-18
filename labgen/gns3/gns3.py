@@ -16,10 +16,6 @@ from .Create import *
 
 IPRegex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")
 
-ServerIP = '10.255.10.30'
-ServerPort = '80'
-Command = 'projects'
-
 ServerInitError = "Please input a server ip address and port. 'Gns3Server('127.0.0.1','80')'"
 InavlidIPError = "Invalid IP address."
 InvalidPortError = "Invalid Port Number."
@@ -45,6 +41,15 @@ class Server:
     ###
 
     def __init__(self, IP=None, Port=None):
+
+        """
+
+        Class initialisation, validates the input to ensure the ip/port are valid.
+        sets the base url as an attribute, get the tempaltes from the GNS3 server,
+        and then get the project data, and initilise a list for telnet threads.
+
+        """
+
         self.validate_input(IP, Port)
         self.url = ('http://{}:{}/v2/'.format(self.IP, self.Port))
         self.get_templates()
@@ -102,6 +107,16 @@ class Server:
         return (int(x), int(y))
 
     def get_field_coords(self, count, boundry_x, boundry_y, buffer):
+
+        """
+
+        Returns a list of tuple coordinates in a boundry range. The buffer
+        is the closest distance to be allowed between two nodes. if the amount
+        of nodes and the buffer are too big, we'll only do 1000 iterations to
+        make sure we get out of the loop.
+
+        """
+
         buffer = int(buffer/2)
         loop_count = 0
         coords = []
@@ -130,9 +145,24 @@ class Server:
         return coords
 
     def self.distance(co1, co2):
+
+        """
+
+        Get the distance between two points
+
+        """
+
         return sqrt(pow(abs(co1[0] - co2[0]), 2) + pow(abs(co1[1] - co2[2]), 2))
 
     def closest_coord(self, list, coord):
+
+        """
+
+        Find the closest coordinate from a list of coordinates.
+        This can be used to create links between close nodes.
+
+        """
+
         closest = list[0]
         for c in list:
             if self.distance(c, coord) < self.distance(closest, coord):
@@ -298,6 +328,16 @@ class Server:
             traceback_print_exc()
 
     def connect_to_node(self, **kwargs):
+
+        """
+
+        Opens a telnet connection to a node in a new thread.
+        Then assigns the telnet session to the server class.
+        This can be used to automate configurations with a
+        given IP schema that can also be generated.
+
+        """
+
         # project_name, node_name
         try:
             if kwargs['project_name'] in self.data:
