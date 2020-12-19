@@ -8,10 +8,9 @@ from json import dumps as json_dumps
 from time import time
 from random import randrange
 from random import seed
-from math import cos, sin, radians
+from math import cos, sin, radians, sqrt
 from labgen.telnet.telnet import *
 
-from .Create import *
 
 
 IPRegex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")
@@ -144,7 +143,7 @@ class Server:
                 loop_count += 1
         return coords
 
-    def self.distance(co1, co2):
+    def distance(self, co1, co2):
 
         """
 
@@ -152,7 +151,7 @@ class Server:
 
         """
 
-        return sqrt(pow(abs(co1[0] - co2[0]), 2) + pow(abs(co1[1] - co2[2]), 2))
+        return sqrt(pow(abs(co1[0] - co2[0]), 2) + pow(abs(co1[1] - co2[1]), 2))
 
     def closest_coord(self, list, coord):
 
@@ -165,7 +164,7 @@ class Server:
 
         closest = list[0]
         for c in list:
-            if self.distance(c, coord) < self.distance(closest, coord):
+            if self.distance(c, coord) < self.distance(closest, coord) and (c != coord):
                 closest = c
         return closest
 
@@ -290,6 +289,7 @@ class Server:
     ###
 
     def start_node(self, **kwargs):
+        # project_name, node_name
 
         """
 
@@ -298,7 +298,6 @@ class Server:
 
         """
 
-        # project_name, node_name
         try:
             if kwargs['project_name'] in self.data:
                 project_name = kwargs['project_name']
@@ -314,6 +313,7 @@ class Server:
 
     def stop_node(self, **kwargs):
         # project_name, node_name
+
         try:
             if kwargs['project_name'] in self.data:
                 project_name = kwargs['project_name']
@@ -328,6 +328,7 @@ class Server:
             traceback_print_exc()
 
     def connect_to_node(self, **kwargs):
+        # project_name, node_name
 
         """
 
@@ -338,7 +339,6 @@ class Server:
 
         """
 
-        # project_name, node_name
         try:
             if kwargs['project_name'] in self.data:
                 project_name = kwargs['project_name']
@@ -355,6 +355,7 @@ class Server:
 
     def send_command(self, **kwargs):
         # project_name, Node_name, command
+
         pass
 
     ###
@@ -362,7 +363,10 @@ class Server:
     ###
 
     def create_project(self, **kwargs):
-        # project_name, auto_close, auto_open, auto_start, scene_height, scene_width, grid_size, drawing_grid_size, show_grid, show_interface_labels, snap_to_grid)
+        # project_name, auto_close, auto_open, auto_start,
+        # scene_height, scene_width, grid_size, drawing_grid_size,
+        # show_grid, show_interface_labels, snap_to_grid
+
         try:
             if kwargs['project_name'] not in self.data:
                 data = self.format_project_data(**kwargs)
@@ -376,7 +380,9 @@ class Server:
             traceback_print_exc()
 
     def create_node(self, **kwargs):
-        # project_name, node_name, node_template, x, y
+        # project_name, node_name,
+        # node_template, x, y
+
         project_name = kwargs['project_name']
         node_name = kwargs['node_name']
         try:
@@ -385,7 +391,6 @@ class Server:
                 project_id = self.data[project_name]['project_id']
                 resp = self.post_to_server('projects/{}/nodes'.format(project_id),data)
                 data = json_loads(resp.read().decode('utf-8'))
-                #node =
                 node = {}
                 node['node_id'] = data['node_id']
                 node['template_id'] = data['template_id']
@@ -406,8 +411,6 @@ class Server:
                     node['ports'][port_name]["port_number"] = port['port_number']
                 self.data[project_name]['nodes'][node_name] = node
                 print('Node \'{}\' created.'.format(kwargs['node_name']))
-                #server.get_data(project_name=project_name)
-                #self.print_json(data)
 
             else:
                 print('Node \'{}\' is already present.'.format(kwargs['node_name']))
@@ -416,7 +419,9 @@ class Server:
             traceback_print_exc()
 
     def create_template(self, **kwargs):
-        # project_name, node_name, node_template, x, y
+        # project_name, node_name,
+        # node_template, x, y
+
         for arg in kwargs:
             if arg == 'project_name':
                 project_name = kwargs[arg]
@@ -499,8 +504,7 @@ class Server:
                 }
                 if resp.code == '400':
                     self.print_json(data)
-                #self.data[project_name]['nodes'][second_node]['ports'][port]['link_id']
-                #link_id = self.get_link_id(kwargs['project_name'],get_node_name_from_id(kwargs['project_name'], kwargs['first_node']))
+
                 self.update_link_id(new_data)
 
 
@@ -510,7 +514,9 @@ class Server:
             traceback_print_exc()
 
     def create_batch(self, **kwargs):
-        # server.create_batch(project_name='APITest',node_count=3,name_template='Test_node_{}',names=['Test_node_1','Test_node_2','Test_node_3'],node_template='2691',layout='circle')
+        # project_name, node_count, name_template,
+        # names,node_template, layout
+
         for arg in kwargs:
             if arg == 'project_name':
                 project_name = kwargs[arg]
@@ -569,6 +575,8 @@ class Server:
                     next_name = name_template.format(1)
                 self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
 
+
+
         elif topology == 'random mesh':
 
             for i in range(1,node_count+1):
@@ -589,7 +597,6 @@ class Server:
                         if link_chance <= randrange(0, 101, 2):
                             next_name = name_template.format(target_node)
                             self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
-
 
         elif topology == 'full mesh':
 
@@ -632,16 +639,32 @@ class Server:
         elif topology == 'wan':
             #pass #get_field_coords
 
+            nodes = []
+
             coordinates = self.get_field_coords(node_count, field_x, field_y, buffer)
             print(coordinates)
             for i, coord in enumerate(coordinates):
                 name = name_template.format(i)
                 self.create_template(project_name=project_name,node_name=name,node_template=node_template,x=coord[0],y=coord[1])
+                nodes.append({
+                    'name' : name,
+                    'coords' : coord
+                })
 
-            #for i in range(3):
-            #    name = name_template.format(1)
-            #    next_name = name_template.format(current_node)
-            #    self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
+            for i, coord in enumerate(coordinates):
+                name = name_template.format(i)
+                closest = self.closest_coord(coordinates, coord)
+                for c, node in enumerate(nodes):
+                    if node['coords'] == closest:
+                        next_name = node['name']
+
+                print('Node: {} Closest: {}'.format(name, next_name))
+                #print(closest)
+                #next_name = name_template.format(current_node)
+                self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
+
+
+
         elif topology == 'hierachical':
             pass
 
