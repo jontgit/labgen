@@ -7,11 +7,10 @@ from json import loads as json_loads
 from json import dumps as json_dumps
 from time import time
 from random import randrange
+from random import randint
 from random import seed
 from math import cos, sin, radians, sqrt
 from labgen.telnet.telnet import *
-
-
 
 IPRegex = re.compile("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")
 
@@ -29,9 +28,6 @@ class Timer:
             print('--- {} --- {} Seconds'.format(timer, round(time() - self.timers[timer]), 5))
         else:
             self.timers[timer] = time()
-
-
-
 
 class Server:
 
@@ -138,10 +134,43 @@ class Server:
                 if too_close_count == len(coords):
                     coords.append((x, y))
             if loop_count > 1000:
+                print('Ran out of space. Please either reduce node count or increase field size.')
                 break
             else:
                 loop_count += 1
         return coords
+
+    def get_grid_coords(self, count, boundry_x, boundry_y, grid_size):
+
+        """
+
+        Returns a list of tuple coordinates in a boundry range. The buffer
+        is the closest distance to be allowed between two nodes. if the amount
+        of nodes and the buffer are too big, we'll only do 1000 iterations to
+        make sure we get out of the loop.
+
+        """
+
+        coords = []
+
+        boundry_x = int(boundry_x/10)
+        boundry_y = int(boundry_y/10)
+
+        while len(coords) < count:
+            seed()
+
+
+            x = randint(-boundry_x, boundry_x)
+            y = randint(-boundry_y, boundry_y)
+
+            if len(coords) == 0:
+                coords.append((x*grid_size, y*grid_size))
+            else:
+                for coord in coords:
+                    if (x not in range(coord[0]-buffer*grid_size, coord[0]+buffer*grid_size)) and (y not in range(coord[1]-buffer, coord[1]+buffer)):
+                        pass
+                    else:
+                        break
 
     def distance(self, co1, co2):
 
@@ -162,11 +191,14 @@ class Server:
 
         """
 
-        closest = list[0]
+        closest = (0,0)
+        second_closest = (0,0)
         for c in list:
             if self.distance(c, coord) < self.distance(closest, coord) and (c != coord):
+                second_closest = closest
                 closest = c
-        return closest
+        #print(closest, coord)
+        return (closest, second_closest)
 
     def format_url(self, command):
 
@@ -391,6 +423,7 @@ class Server:
                 project_id = self.data[project_name]['project_id']
                 resp = self.post_to_server('projects/{}/nodes'.format(project_id),data)
                 data = json_loads(resp.read().decode('utf-8'))
+
                 node = {}
                 node['node_id'] = data['node_id']
                 node['template_id'] = data['template_id']
@@ -472,6 +505,7 @@ class Server:
                     node['ports'][port_name]["adapter_number"] = port['adapter_number']
                     node['ports'][port_name]["port_number"] = port['port_number']
                 print('Node \'{}\' created.'.format(kwargs['node_name']))
+                self.update_node_name(project_name=project_name, node_name=node_name, node_id=data['node_id'])
                 self.data[project_name]['nodes'][node_name] = node
 
         except:
@@ -584,7 +618,7 @@ class Server:
                 if i == 1:
                     coords = (anchor_x, anchor_y)
                 else:
-                    coords = self.get_circle_coords(radius,node_count,i,anchor_x,anchor_y)
+                    coords = self.get_circle_coords(radius,node_count-1,i,anchor_x,anchor_y)
                 if manual:
                     self.create_node(project_name=project_name,node_name=name,node_template=node_template,x=coords[0],y=coords[1])
                 else:
@@ -605,7 +639,7 @@ class Server:
                 if i == 1:
                     coords = (anchor_x, anchor_y)
                 else:
-                    coords = self.get_circle_coords(radius,node_count,i,anchor_x,anchor_y)
+                    coords = self.get_circle_coords(radius,node_count-1,i,anchor_x,anchor_y)
                 if manual:
                     self.create_node(project_name=project_name,node_name=name,node_template=node_template,x=coords[0],y=coords[1])
                 else:
@@ -625,7 +659,7 @@ class Server:
                 if i == 1:
                     coords = (anchor_x, anchor_y)
                 else:
-                    coords = self.get_circle_coords(radius,node_count,i,anchor_x,anchor_y)
+                    coords = self.get_circle_coords(radius,node_count-1,i,anchor_x,anchor_y)
                 if manual:
                     self.create_node(project_name=project_name,node_name=name,node_template=node_template,x=coords[0],y=coords[1])
                 else:
@@ -637,13 +671,14 @@ class Server:
                 self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
 
         elif topology == 'wan':
-            #pass #get_field_coords
+            # pass, get_field_coords
 
             nodes = []
+            links = []
 
             coordinates = self.get_field_coords(node_count, field_x, field_y, buffer)
-            print(coordinates)
-            for i, coord in enumerate(coordinates):
+            #print(coordinates)
+            for i, coord in enumerate(coordinates, 1):
                 name = name_template.format(i)
                 self.create_template(project_name=project_name,node_name=name,node_template=node_template,x=coord[0],y=coord[1])
                 nodes.append({
@@ -651,17 +686,31 @@ class Server:
                     'coords' : coord
                 })
 
-            for i, coord in enumerate(coordinates):
+            for i, coord in enumerate(coordinates, 1):
                 name = name_template.format(i)
-                closest = self.closest_coord(coordinates, coord)
+                #print(coordinates)
+                #next_name = ''
+                closest = self.closest_coord(coordinates, coord)[0]
+                second_closest = self.closest_coord(coordinates, coord)[1]
                 for c, node in enumerate(nodes):
-                    if node['coords'] == closest:
+                    if (node['coords'] == closest):
+
                         next_name = node['name']
 
                 print('Node: {} Closest: {}'.format(name, next_name))
                 #print(closest)
                 #next_name = name_template.format(current_node)
-                self.create_link(project_name=project_name, first_node=name, second_node=next_name, link_type=link_type)
+
+                #for link in links:
+                #    if name == link[0]:
+
+
+                self.create_link(project_name=project_name,
+                                 first_node=name,
+                                 second_node=next_name,
+                                 link_type=link_type)
+
+                links.append((name, next_name))
 
 
 
@@ -670,6 +719,91 @@ class Server:
 
         elif topology == 'chain':
             pass
+
+    def update_node_name(self, **kwargs):
+        try:
+            for arg in kwargs:
+                if arg == 'project_name':
+                    project_name = kwargs[arg]
+                elif arg == 'node_name':
+                    node_name = kwargs[arg]
+                elif arg == 'node_id':
+                    node_id = kwargs[arg]
+
+            project_id = self.data[project_name]['project_id']
+            data = { 'label' : { 'text' : node_name}}
+            print('Attempting to change {} - {}'.format(node_name,node_id))
+            resp = self.post_to_server('projects/{}/nodes/{}'.format(project_id, node_id),data)
+            data = json_loads(resp.read().decode('utf-8'))
+        except Exception as ex:
+            traceback_print_exc()
+
+    def draw_text(self, **kwargs):
+        rotation = 0
+        for arg in kwargs:
+            if arg == 'project_name':
+                project_name = kwargs[arg]
+            elif arg == 'x':
+                x = kwargs[arg]
+            elif arg == 'y':
+                y = kwargs[arg]
+            elif arg == 'text':
+                text = kwargs[arg]
+            elif arg == 'font_size':
+                font_size = kwargs[arg]
+            elif arg == 'rotation':
+                rotation = kwargs[arg]
+            elif arg == 'colour':
+                colour = kwargs[arg]
+        try:
+            project_id = self.data[project_name]['project_id']
+        except:
+            print('Error: {} not found.'.format(project_name))
+
+        svg = "<svg width=\"{}\" height=\"{}\"><text fill=\"{}\" fill-opacity=\"{}\" font-family=\"{}\" font-size=\"{}\" font-weight=\"{}\">{}</text></svg>".format(100, 100, '#000000', 1.0, "TypeWriter", font_size, 'bold', text)
+        #"<svg height=\"88\" width=\"53\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Memes\n\n\n\n</text></svg>"
+
+        data = {
+            'rotation' : rotation,
+            'x' : x,
+            'y' : y,
+            'svg' : svg,
+        }
+        print(data)
+        resp = self.post_to_server('projects/{}/drawings'.format(project_id),data)
+        data = json_loads(resp.read().decode('utf-8'))
+
+    def draw_line(self, **kwargs):
+
+        for arg in kwargs:
+            if arg == 'project_name':
+                project_name = kwargs[arg]
+            elif arg == 'x':
+                x = kwargs[arg]
+            elif arg == 'y':
+                y = kwargs[arg]
+            elif arg == 'height':
+                height = kwargs[arg]
+            elif arg == 'width':
+                width = kwargs[arg]
+            elif arg == 'colour':
+                colour = kwargs[arg]
+
+        try:
+            project_id = self.data[project_name]['project_id']
+        except:
+            print('Error: {} not found.'.format(project_name))
+
+        svg = "<svg width=\"{}\" height=\"{}\"><line stroke=\"{}\" stroke-width=\"{}\" x1=\"{}\" x2=\"{}\" y1=\"{}\" y2=\"{}\"/></svg>".format(width, height, colour, 2, 0, width, 0, height)
+
+        data = {
+            'x' : x,
+            'y' : y,
+            'svg' : svg,
+        }
+        print(data)
+        resp = self.post_to_server('projects/{}/drawings'.format(project_id),data)
+        data = json_loads(resp.read().decode('utf-8'))
 
     ###
     ### PROJECT CREATE FUNCTIONS
@@ -696,9 +830,9 @@ class Server:
 
     def delete_node(self, project_name=None, node_name=None):
         try:
-            if node_name in self.names_ids[project_name]['nodes']:
-                project_id = self.names_ids[project_name]['project_id']
-                node_id = self.names_ids[project_name]['nodes'][node_name]
+            if node_name in self.data[project_name]['nodes']:
+                project_id = self.data[project_name]['project_id']
+                node_id = self.data[project_name]['nodes'][node_name]
                 resp = self.delete_from_server('projects/{}/nodes/{}'.format(project_id, node_id))
                 self.get_projects()
                 print('Node \'{}\' deleted.'.format(node_name))
@@ -708,6 +842,17 @@ class Server:
 
         except Exception as ex:
             print(ex)
+
+    def delete_all_nodes(self, project_name):
+        try:
+            project_id = self.data[project_name]['project_id']
+            for node in self.data[project_name]['nodes']:
+                node_id = self.data[project_name]['nodes'][node]['node_id']
+                resp = self.delete_from_server('projects/{}/nodes/{}'.format(project_id, node_id))
+                print('Node \'{}\' deleted.'.format(node))
+            self.get_projects()
+        except:
+            print('Error: Project {} not found.'.format(project_name))
 
     ###
     ### DATA FORMAT FUNCTIONS
