@@ -15,9 +15,9 @@ server.create_batch(project_name='APITest',
                     anchor_y=0,
                     node_count=7,
                     radius=200,
-                    name_template='IOSv_0_{}',
-                    node_template='IOSv',
-                    link_type='ethernet',
+                    name_template='2691_0_{}',
+                    node_template='2691',
+                    link_type='serial',
                     topology='star')
 
 server.create_batch(project_name='APITest',

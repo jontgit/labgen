@@ -131,7 +131,7 @@ class Telnet(threading.Thread):
                 self.port = kwargs[arg]
             elif arg == 'hostname':
                 self.hostname = kwargs[arg]
-            elif arg == 'end_device_type':
+            elif arg == 'device_type':
                 self.end_device_type = kwargs[arg]
             elif arg == 'timeout':
                 self.timeout = kwargs[arg]
@@ -240,11 +240,11 @@ class Telnet(threading.Thread):
 
 if __name__ == '__main__':
 
-    r1 = Telnet('10.255.10.30', 5009, 'R1', 'cisco_ios')
-    r2 = Telnet('10.255.10.30', 5010, 'R2', 'cisco_ios')
+    r1 = Telnet('10.255.10.30', 5009, '2691_0_1', 'cisco_ios')
+    #r2 = Telnet('10.255.10.30', 5010, 'R2', 'cisco_ios')
 
     r1.set_interface_ip('f0/0', '10.255.255.1', '255.255.255.252')
-    r2.set_interface_ip('f0/0', '10.255.255.2', '255.255.255.252')
+    #r2.set_interface_ip('f0/0', '10.255.255.2', '255.255.255.252')
 
 
     #asa = Telnet('10.255.10.30', 5018, 'ciscoasa', 'cisco_asa')

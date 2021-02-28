@@ -85,6 +85,7 @@ class Server:
         Prints dictionary as formatted readable output.
 
         """
+        data[project_name]['nodes'][node_name]['console_session'] = console_session
         print(json_dumps(data, indent=4))
 
     def get_circle_coords(self, radius, divider, count,center_x, center_y):
@@ -215,10 +216,24 @@ class Server:
     ###
 
     def update_link_id(self, data):
+
+        """
+
+        Updates a given port on a node to state what other node it connects up to.
+
+        """
+
         self.data[data['project_name']]['nodes'][data['first']]['ports'][data['first_port']]['link_id'] = data['link_id']
         self.data[data['project_name']]['nodes'][data['second']]['ports'][data['second_port']]['link_id'] = data['link_id']
 
     def get_node_name_from_id(self, project_name, node_id):
+
+        """
+
+        Returns a node's name based off of the node's ID. (duh)
+
+        """
+
         for node in self.data[project_name]['nodes']:
             if self.data[project_name]['nodes'][node]['node_id'] == node_id:
                 return node
@@ -346,6 +361,13 @@ class Server:
     def stop_node(self, **kwargs):
         # project_name, node_name
 
+        """
+
+        Sends a HTTP POST packet to the UUID/Url of the server to start the node.
+        Sets the local server data of the node in question to '̶̶̶r̶̶̶u̶̶̶n̶̶̶n̶̶̶i̶̶̶n̶̶̶g̶̶̶'̶̶̶  'stopped'
+
+        """
+
         try:
             if kwargs['project_name'] in self.data:
                 project_name = kwargs['project_name']
@@ -380,8 +402,8 @@ class Server:
                     console_port = self.data[project_name]['nodes'][node_name]['console_port']
                     console_session = Telnet(server_ip=self.IP, device_type='cisco_ios_telnet', console_port=console_port, node_name=node_name)
                     self.telnet_threads.append(console_session)
-                    self.data[project_name]['nodes'][node_name]['console_session'] = str(console_session)
-                    console_session.start()
+                    self.data[project_name]['nodes'][node_name]['console_session'] = console_session
+                    #console_session.start()
         except:
             traceback_print_exc()
 
@@ -731,9 +753,9 @@ class Server:
                     node_id = kwargs[arg]
 
             project_id = self.data[project_name]['project_id']
-            data = { 'label' : { 'text' : node_name}}
-            print('Attempting to change {} - {}'.format(node_name,node_id))
-            resp = self.post_to_server('projects/{}/nodes/{}'.format(project_id, node_id),data)
+            data = { 'name' : node_name }
+            #print('Attempting to change {} - {}'.format(node_name,node_id))
+            resp = self.put_to_server('projects/{}/nodes/{}'.format(project_id, node_id),data)
             data = json_loads(resp.read().decode('utf-8'))
         except Exception as ex:
             traceback_print_exc()
@@ -1028,6 +1050,13 @@ class Server:
     ###
     ### HTTP FUNCTIONS
     ###
+
+    def put_to_server(self, command, input_data):
+        url = self.format_url(command)
+        data = str(json_dumps(input_data)).encode('utf-8')
+        req = request(url, method='PUT', data=data)
+        resp = request_urlopen(req)
+        return resp
 
     def post_to_server(self, command, input_data):
         url = self.format_url(command)
